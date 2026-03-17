@@ -238,3 +238,50 @@ border-radius:6px;
 color:white;
 cursor:pointer;
 }
+/* IMC BOX */
+
+#imcBox{
+background:#020617;
+border:1px solid rgba(56,189,248,.3);
+padding:20px;
+border-radius:15px;
+margin-bottom:25px;
+box-shadow:0 0 20px rgba(56,189,248,.2);
+}
+
+#imcBox h2{
+margin-bottom:10px;
+color:#38bdf8;
+}
+
+#imcBox input,
+#imcBox select{
+width:100%;
+padding:10px;
+margin:6px 0;
+border-radius:8px;
+border:none;
+}
+
+#calcIMC{
+width:100%;
+padding:12px;
+margin-top:10px;
+
+background:linear-gradient(135deg,#38bdf8,#2563eb);
+border:none;
+border-radius:10px;
+color:white;
+cursor:pointer;
+
+transition:.3s;
+}
+
+#calcIMC:hover{
+transform:scale(1.05);
+}
+
+#imcResult{
+margin-top:10px;
+font-weight:bold;
+}
