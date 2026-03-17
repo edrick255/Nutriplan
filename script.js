@@ -411,3 +411,37 @@ c.style.display=title.includes(text)?"block":"none"
 })
 
 }
+/* IMC */
+
+document.getElementById("calcIMC").onclick = function(){
+
+let age = document.getElementById("age").value;
+let gender = document.getElementById("gender").value;
+let weight = document.getElementById("weight").value;
+let height = document.getElementById("height").value;
+
+if(!weight || !height){
+alert("Completa peso y altura");
+return;
+}
+
+let h = height / 100;
+let imc = weight / (h * h);
+
+let result = "";
+
+/* Clasificación */
+
+if(imc < 18.5){
+result = "Bajo peso";
+}else if(imc < 25){
+result = "Normal";
+}else if(imc < 30){
+result = "Sobrepeso";
+}else{
+result = "Obesidad";
+}
+
+document.getElementById("imcResult").innerText =
+"IMC: " + imc.toFixed(2) + " (" + result + ")";
+}
